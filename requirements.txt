@@ -1,0 +1,6 @@
+numpy
+scipy
+scikit-learn
+tensorflow==1.15.2
+tensorflow_probability==0.7.0
+pandas
