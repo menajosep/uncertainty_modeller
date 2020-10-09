@@ -1,6 +1,6 @@
 [tool.poetry]
 
-name = "uncertainty_wrapper"
+name = "uncertainty_classification_wrapper"
 version = "0.1"
 description = "Sklearn wrapper for classifications system that computes the prediction uncertainty"
 
