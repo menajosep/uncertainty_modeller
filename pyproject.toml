@@ -1,17 +1,17 @@
 [tool.poetry]
 
-name = "uncertainty_modeler"
+name = "uncertainty_wrapper"
 version = "0.1"
 description = "Sklearn wrapper for classifications system that computes the prediction uncertainty"
 
 license = "MIT"
 
-authors = ["Jordi Allué <jordi.allue@eurecat.org>"]
+authors = ["José Mena <menajosep@gmail.com>"]
 
 readme = "README.md"
 
-homepage = "https://pypi.org/project/uncertainty_modeler"
-documentation = "https://uncertainty_modeler.readthedocs.io"
+homepage = "https://github.com/menajosep/uncertainty_modeller"
+documentation = "https://github.com/menajosep/uncertainty_modeller/README.md"
 
 keywords = [
 ]
@@ -22,7 +22,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6.1",
+    "Programming Language :: Python :: 3.6",
 ]
 
 [tool.poetry.dependencies]
