@@ -11,10 +11,10 @@ import sys
 CWD = os.getcwd()
 TMP = tempfile.gettempdir()
 CONFIG = {
-    "full_name": "Jordi Allué",
-    "email": "jordi.allue@eurecat.org",
+    "full_name": "Jose Mena",
+    "email": "menajosep@gmail.com",
     "project_name": "UncertaintyModeler",
-    "package_name": "uncertainty_modeler",
+    "package_name": "uncertainty_classification_wrapper",
     "project_short_description": "Sklearn wrapper for classifications system that computes the prediction uncertainty",
     "python_major_version": 3,
     "python_minor_version": 6,

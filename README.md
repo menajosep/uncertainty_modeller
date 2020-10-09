@@ -114,6 +114,6 @@ After installation, the package can be imported:
 
 ```text
 $ python
->>> import uncertainty_modeler
->>> uncertainty_modeler.__version__
+>>> import uncertainty_classification_wrapper
+>>> uncertainty_classification_wrapper.__version__
 ```

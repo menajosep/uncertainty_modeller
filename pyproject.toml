@@ -1,7 +1,7 @@
 [tool.poetry]
 
 name = "uncertainty_classification_wrapper"
-version = "0.1"
+version = "0.2"
 description = "Sklearn wrapper for classifications system that computes the prediction uncertainty"
 
 license = "MIT"
@@ -68,7 +68,7 @@ ipython = "^7.12.0"
 
 [tool.poetry.scripts]
 
-UncertaintyModeler = "uncertainty_modeler.cli:main"
+UncertaintyModeler = "uncertainty_classification_wrapper.cli:main"
 
 [tool.black]
 

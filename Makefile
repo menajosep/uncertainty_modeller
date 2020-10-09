@@ -1,6 +1,6 @@
 # Project settings
 PROJECT := UncertaintyModeler
-PACKAGE := uncertainty_modeler
+PACKAGE := uncertainty_classification_wrapper
 
 # Project paths
 PACKAGES := $(PACKAGE) tests

@@ -2,4 +2,4 @@
 
 # pylint: disable=unused-import
 
-from uncertainty_modeler.tests.conftest import pytest_configure
+from uncertainty_classification_wrapper.tests.conftest import pytest_configure

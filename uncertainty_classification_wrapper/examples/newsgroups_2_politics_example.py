@@ -3,8 +3,8 @@ from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
-from uncertainty_modeler import UncertaintyWrapperEstimator
-from uncertainty_modeler.tests.test_utils import PoliticsClassifierWrapper, load_politics_data
+from uncertainty_classification_wrapper import UncertaintyWrapperEstimator
+from uncertainty_classification_wrapper.tests.test_utils import PoliticsClassifierWrapper, load_politics_data
 
 
 def main():
@@ -54,7 +54,7 @@ def main():
 
     # Load the BBC news dataset also making a transformation for getting 1 when the category is politics
     # and 0 otherwise
-    polit_X_train, polit_X_test, polit_y_train, polit_y_test = load_politics_data("./uncertainty_modeler/tests/fixtures/bbc-text.csv")
+    polit_X_train, polit_X_test, polit_y_train, polit_y_test = load_politics_data("..//tests/fixtures/bbc-text.csv")
 
     # we create the uncertaintywrapper referencing to the black box
     uncertainty_wrapper = UncertaintyWrapperEstimator(black_box=politics_model, verbose=1)
@@ -76,3 +76,6 @@ def main():
         polit_y_uncerts.shape[0],
         accuracy_score(np.array(polit_y_test)[polit_y_uncertain_preds_indexes],
                        polit_y_pred[polit_y_uncertain_preds_indexes])))
+
+if __name__ == '__main__':  # pragma: no cover
+    main()

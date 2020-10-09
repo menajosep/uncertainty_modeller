@@ -8,7 +8,7 @@ from sklearn.utils.multiclass import unique_labels
 from tensorflow.keras import backend as K
 from tensorflow.keras.utils import to_categorical
 
-from uncertainty_modeler.models.dirichlet_wrapper import DirichletUncertaintyWrapper
+from uncertainty_classification_wrapper.models.dirichlet_wrapper import DirichletUncertaintyWrapper
 
 
 class UncertaintyWrapperEstimator(ClassifierMixin, BaseEstimator):

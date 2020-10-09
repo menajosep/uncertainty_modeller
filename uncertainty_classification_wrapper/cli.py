@@ -3,7 +3,7 @@
 import click
 import log
 
-from . import utils
+from . import UncertaintyWrapperEstimator
 
 
 @click.command()
@@ -11,10 +11,7 @@ from . import utils
 def main(feet=None):
     log.init()
 
-    meters = utils.feet_to_meters(feet)
-
-    if meters is not None:
-        click.echo(meters)
+    wrapper = UncertaintyWrapperEstimator()
 
 
 if __name__ == '__main__':  # pragma: no cover

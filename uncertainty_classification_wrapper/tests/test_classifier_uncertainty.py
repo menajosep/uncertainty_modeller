@@ -10,8 +10,8 @@ from numpy.testing import (
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
-from uncertainty_modeler import UncertaintyWrapperEstimator
-from uncertainty_modeler.tests.test_utils import load_politics_data, PoliticsClassifierWrapper
+from uncertainty_classification_wrapper import UncertaintyWrapperEstimator
+from uncertainty_classification_wrapper.tests.test_utils import load_politics_data, PoliticsClassifierWrapper
 
 
 @pytest.fixture
@@ -21,7 +21,7 @@ def newsgroups_data():
 
 @pytest.fixture
 def politics_data():
-    return load_politics_data("./uncertainty_modeler/tests/fixtures/bbc-text.csv")
+    return load_politics_data("./uncertainty_classification_wrapper/tests/fixtures/bbc-text.csv")
 
 
 def test_pretrained_classifier(newsgroups_data, politics_data):
