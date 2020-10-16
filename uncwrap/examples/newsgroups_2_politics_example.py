@@ -3,8 +3,8 @@ from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
-from uncertainty_classification_wrapper import UncertaintyWrapperEstimator
-from uncertainty_classification_wrapper.tests.test_utils import PoliticsClassifierWrapper, load_politics_data
+from uncwrap import UncertaintyWrapperEstimator
+from uncwrap.tests.test_utils import PoliticsClassifierWrapper, load_politics_data
 
 
 def main():

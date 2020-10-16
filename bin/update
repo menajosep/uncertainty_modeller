@@ -14,7 +14,7 @@ CONFIG = {
     "full_name": "Jose Mena",
     "email": "menajosep@gmail.com",
     "project_name": "UncertaintyModeler",
-    "package_name": "uncertainty_classification_wrapper",
+    "package_name": "uncwrap",
     "project_short_description": "Sklearn wrapper for classifications system that computes the prediction uncertainty",
     "python_major_version": 3,
     "python_minor_version": 6,

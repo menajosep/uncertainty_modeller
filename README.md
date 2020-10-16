@@ -17,11 +17,11 @@ What if we could have a way to tell if the prediction for the new dataset is con
 
 Take for example, a linear classifier trained with the date at the top-left figure. When we apply to the target data, bottom-left figure, we observe that there is a mass of points that will be wrongly classified, as they are in the class 1 region, but they are labelled as class 2.
 
-![](RackMultipart20200930-4-16wcrro_html_3e98340e01685e10.png)
+![](uncertainties.png)
 
 Imagine that this classifier was trained to predict if an image belongs to a cat, a dog or a bear. Imagine that the images used for training that classifier included white cats, but only black or brown bears. At prediction time, we get pictures of polar bears. Our classifier we&#39;ll try to do its best and it may predict them as cats, as it only had seen white animals belonging to the cat category.
 
-![](RackMultipart20200930-4-16wcrro_html_b981569e1c765512.jpg) ![](RackMultipart20200930-4-16wcrro_html_dc65de4adec9a876.jpg)
+![](cat.jpg) ![](bear.jpeg)
 
 ## Uncertainty wrapper
 
@@ -31,7 +31,7 @@ What we propose in this component is a wrapper that takes the input and the outp
 
 Further theoretical details can be found at the paper [https://ieeexplore.ieee.org/document/9097854](https://ieeexplore.ieee.org/document/9097854), but the main idea is that we have a black-box classification system that takes as input a feature vector **x** , or an embedding, in the case of images and texts, and outputs a probability distribution **y\*** over the predicted categories or classes. The wrapper produces a new prediction **y&#39;** together with an uncertainty score for this prediction **u** , as illustrated in the following diagram:
 
-![](RackMultipart20200930-4-16wcrro_html_3cc53616a2e62c3b.jpg)
+![](diagram2.png)
 
 In the instantiation of the wrapper, these are the parameters that can be set:
 
@@ -114,6 +114,6 @@ After installation, the package can be imported:
 
 ```text
 $ python
->>> import uncertainty_classification_wrapper
->>> uncertainty_classification_wrapper.__version__
+>>> import uncwrap
+>>> uncwrap.__version__
 ```

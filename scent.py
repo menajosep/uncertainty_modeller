@@ -12,7 +12,7 @@ else:
     notify = Notifier.notify
 
 
-watch_paths = ["uncertainty_classification_wrapper", "tests"]
+watch_paths = ["uncwrap", "tests"]
 
 
 class Options:
