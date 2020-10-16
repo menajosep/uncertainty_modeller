@@ -105,7 +105,7 @@ and how we can increase the accuracy of the resulting system by rejecting those 
 Install it directly into an activated virtual environment:
 
 ```text
-$ pip3 install UncertaintyModeler
+$ pip3 install uncwrap
 ```
 
 # Usage
